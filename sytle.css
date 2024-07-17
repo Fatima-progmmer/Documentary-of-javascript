@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+
+}
+
+footer {
+    text-align: center;
+    position: sticky;
+    background-color: rgb(252, 252, 252);
+}
+
+header {
+    border: 1px solid grey;
+    height: 2500vh;
+    width: 22%;
+}
+
+
+nav {
+    position: fixed;
+}
+
+nav h1 {
+    font-size: 23.5px;
+    padding: 10px;
+    border: 1px solid grey;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    padding: 10px;
+    color: black;
+}
+
+nav ul li:hover {
+    transition: 0.3s ease-in-out;
+    background: rgb(212, 204, 204);
+}
+
+#Variables li,
+#DataType li,
+#Conditionalstatements li,
+#Loops li {
+    font-weight: 800;
+}
+
+main {
+    padding: 50px;
+    max-width: 1200px;
+    width: 78%;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section article {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+section h2 {
+    font-size: 20px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+section article ul {
+    margin-left: 30px;
+}
+
+section article li {
+    margin-bottom: 10px;
+}
+
+code {
+    text-align: left;
+    white-space: pre-line;
+    line-height: 2;
+    background: rgb(235, 230, 230);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: inset black;
+}
+
+@media (max-width:480px) {
+    .main {
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    header {
+        height: 200px;
+        overflow: hidden;
+        overflow-y: scroll;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li:hover {
+        display: inline-block;
+        transition: 0.3s ease-in-out;
+        background: rgb(212, 204, 204);
+        width: auto;
+    }
+
+    header h1 {
+        text-align: center;
+        background-color: grey;
+        z-index: 5;
+
+    }
+
+    main {
+        padding: 20pxx;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    section article {
+        flex-direction: column;
+    }
+
+    section article ul {
+        margin-left: 0;
+    }
+
+    section article ul li {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentary</title>
+    <link rel="stylesheet" href="sytle.css">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <nav>
+                <h1>
+                    Javascript Documentary
+                </h1>
+                <ul>
+                    <a href="#Introduction">
+                        <li>Introduction</li>
+                    </a>
+                    <a href="#Variables">
+                        <li>Variables</li>
+                    </a>
+                    <a href="#DataType">
+                        <li>Data Type</li>
+                    </a>
+                    <a href="#Conditionalstatements">
+                        <li>Conditional <br>statements</li>
+                    </a>
+                    <a href="#Loops">
+                        <li>Loops</li>
+                    </a>
+                    <a href="#Function">
+                        <li>Function</li>
+                    </a>
+                    <a href="#Array">
+                        <li>Arrays</li>
+                    </a>
+                    <a href="#Objects">
+                        <li>Objects</li>
+                    </a>
+                    <a href="#DOM">
+                        <li>DOM <br> manipulation</li>
+                    </a>
+                    <a href="#Events">
+                        <li>Events</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="Introduction">
+                <h2>Introduction</h2>
+                <article>
+                    <p>
+                        JavaScript is a high-level, dynamic, and interpreted programming language that is primarily used
+                        for
+                        client-side
+                        scripting on the web. It was created by Brendan Eich in 1995 while he was working at Netscape
+                        Communications
+                        Corporation.
+
+                        JavaScript is often used to add interactive elements to websites, such as:
+                    </p>
+                    <ul>
+                        <li>Animations</li>
+                        <li>Form validation</li>
+                        <li>Interactive menus</li>
+                        <li>Dynamic content updates</li>
+                        <li>Web applications</li>
+                    </ul>
+                    <p>
+                        JavaScript is known for its:
+                    </p>
+                    <ul>
+                        <li>Client-side execution (runs on the user's web browser)</li>
+                        <li>Dynamic nature (code can be generated and executed at runtime)</li>
+                        <li>First-class functions (functions can be passed as arguments or returned as values)</li>
+                        <li>Object-oriented programming (OOP) capabilities</li>
+                        <li>Prototype-based programming (objects can inherit properties and behavior from other objects)
+                        </li>
+                    </ul>
+                    <p>JavaScript is an essential language for web development, and is widely used in:</p>
+                    <ul>
+                        <li>Web development (front-end and back-end)</li>
+                        <li>Mobile app development (using frameworks like React Native and Angular)</li>
+                        <li>Desktop applications (using Electron and NW.js)</li>
+                        <li>Server-side programming (using Node.js)</li>
+                        <li>Game development</li>
+                    </ul>
+                    <p>
+                        JavaScript is constantly evolving, with new features and improvements being added to the
+                        language
+                        through the ECMAScript
+                        standard.
+                    </p>
+                </article>
+            </section>
+            <section id="Variables">
+                <h2>Variables</h2>
+                <article>
+                    <p>
+                        In JavaScript, variables are used to store and manipulate data. Here are some examples of
+                        variables
+                        with example code:
+                    </p>
+                    <li>
+                        Number
+                    </li>
+                    <code>
+                                let age = 25;
+                                console.log(age); // Output: 25
+                             </code>
+                    <li>
+                        String
+                    </li>
+                    <code>
+                                 let name = 'John Doe';
+                                  console.log(name); // Output: "John Doe"
+                              </code>
+                    <li>Boolean
+                    </li>
+                    <code>
+                            let isAdmin = true;
+                             console.log(isAdmin); // Output: true
+                             </code>
+                    <li>
+                        Array
+
+                    </li>
+                    <code>
+                                                let colors = ['red', 'green', 'blue'];
+                                                console.log(colors); // Output: ["red", "green", "blue"]
+                                            </code>
+                    <li>
+                        Object
+
+                    </li>
+                    <code>
+                                                    let person = { name: 'John', age: 25 };
+                                                    console.log(person); // Output: { name: "John", age: 25 }
+                                                </code>
+                    <li>
+                        Null
+
+                    </li>
+                    <code>
+                                                    let nullValue = null;
+                                                    console.log(nullValue); // Output: null
+                                                </code>
+                    <li>
+                        Undefined
+
+                    </li>
+                    <code>
+                                                    let undefinedValue;
+                                                    console.log(undefinedValue); // Output: undefined
+                                                </code>
+                    <li>
+                        Const(constant)
+
+                    </li>
+                    <code>
+                                                    const PI = 3.14;
+                                                    console.log(PI); // Output: 3.14
+                                                </code>
+                    <p>
+                        The `let` and `const` keywords are used to declare variables in modern JavaScript. The `var`
+                        keyword
+                        is also used in
+                        older code, but it has different scoping rules.
+
+                        These are the basic types of variables in JavaScript.
+                    </p>
+                </article>
+            </section>
+            <section id="DataType">
+                <h2>Data Type</h2>
+                <article>
+                    <p>
+                        data types in JavaScript with examples
+                    </p>
+                    <li>
+                        Number
+                    </li>
+                    <code>
+                                let age = 25; // integer
+                                let height = 5.9; // floating-point number
+                            </code>
+                    <li>
+                        String
+                    </li>
+                    <code>
+                                let name = 'John Doe'; // string with single quotes
+                                let message = "Hello, World!"; // string with double quotes
+                            </code>
+                    <li>
+                        Boolean
+                    </li>
+                    <code>
+                                let isAdmin = true; // true or false
+                            </code>
+                    <li>
+                        Array
+                    </li>
+                    <code>
+                                let colors = ['red', 'green', 'blue']; // array of strings
+                                let numbers = [1, 2, 3, 4, 5]; // array of numbers
+                            </code>
+                    <li>
+                        Object
+                    </li>
+                    <code>
+                                let person = { name: 'John', age: 25 }; // object with properties
+                            </code>
+                    <li>
+                        Null
+                    </li>
+                    <code>
+                                let nullValue = null; // null value
+                            </code>
+                    <li>
+                        Undefined
+                    </li>
+                    <code>
+                                let undefinedValue; // undefined variable
+                            </code>
+                    <li>
+                        Symbol (ES6+)
+                    </li>
+                    <code>
+                                let sym = Symbol('foo'); // symbol
+                            </code>
+                    <li>
+                        BigInt (ES10+)
+                    </li>
+                    <code>
+                                let bigNum = 12345678901234567890n; // big integer
+                            </code>
+                    <p>
+                        These examples are in JavaScript syntax, which is slightly different from Java syntax.
+                    </p>
+                    <p>
+                        In JavaScript, you can use the `typeof` operator to check the data type of a variable, like
+                        this:
+                    </p>
+                    <code>
+                            console.log(typeof age); // Output: "number"
+                            console.log(typeof name); // Output: "string"
+                        </code>
+                </article>
+            </section>
+            <section id="Conditionalstatements">
+                <h2>Hello world</h2>
+                <article>
+                    <p>
+                        Conditional statements in JavaScript are used to make decisions based on conditions or boolean
+                        expressions. Here are
+                        some examples:
+                    </p>
+                    <li>
+                        If Statement
+                    </li>
+                    <p>
+                        if (condition) {
+                        // code to be executed if condition is true
+                        }
+                    </p>
+                    <code>
+                            if (age >= 18) {
+                            console.log("You are eligible to vote.");
+                            }
+                        </code>
+                    <li>
+                        If-Else Statement
+                    </li>
+                    <p>
+                        if (condition) <br>{
+                        // code to be executed if condition is true
+                        } <br>elsebr
+                        {
+                        <br>// code to be executed if condition is false
+                        }
+                    </p>
+                    <code>
+                            if (age >= 18) {
+                            console.log("You are eligible to vote.");
+                            } else {
+                            console.log("You are not eligible to vote.");
+                            }
+                        </code>
+                    <li>
+                        If-Else If-Else Statement
+                    </li>
+                    <p>
+                        if (condition1) {<br>
+                        // code to be executed if condition1 is true
+                        <br> } else if (condition2) {<br>
+                        // code to be executed if condition2 is true
+                        <br> } else {<br>
+                        // code to be executed if both conditions are false
+                        <br> }
+                    </p>
+                    <code>
+                            if (age >= 18) {
+                            console.log("You are eligible to vote.");
+                            } else if (age >= 16) {
+                            console.log("You can apply for a learner's permit.");
+                            } else {
+                            console.log("You are not eligible to vote or apply for a learner's permit.");
+                            }
+                        </code>
+                    <li>
+                        Switch Statement
+                    </li>
+                    <p>
+                        switch (expression) {<br>
+                        case value1: <br>
+
+                        // code to be executed if expression equals value1
+                        <br>break;
+                        case value2: <br>
+                        // code to be executed if expression equals value2
+                        break;<br>
+                        default: <br>
+                        // code to be executed if expression does not match any case
+                        <br> }
+                    </p>
+                    <code>
+                            switch (dayOfWeek) {
+                            case 0:
+                            console.log("Sunday");
+                            break;
+                            case 1:
+                            console.log("Monday");
+                            break;
+                            case 2:
+                            console.log("Tuesday");
+                            break;
+                            default:
+                            console.log("Another day");
+                            }
+                        </code>
+                    <p>
+                        These are the basic conditional statements in JavaScript.
+                    </p>
+                </article>
+            </section>
+            <section id="Loops">
+                <h2>Loops</h2>
+                <article>
+                    <p>
+                        Looping statements in JavaScript allow you to execute a block of code repeatedly for a specified
+                        number of times or
+                        until a certain condition is met. Here are some examples:
+                    </p>
+                    <li>For Loop</li>
+                    <p>
+                        for (initialization; condition; increment) {
+                        <br>// code to be executed
+                        <br> }
+                    </p>
+                    <code>
+                                for (let i = 0; i < 5; i++) 
+                                { 
+                                    console.log(i); 
+                                }
+                            </code>
+                    <li>
+                        While Loop
+                    </li>
+                    <p>
+                        while (condition)
+                        <br>{<br>
+                        // code to be executed
+                        <br> }
+                    </p>
+                    <code>
+                                let i = 0;
+                                while (i < 5) 
+                                { 
+                                    console.log(i); 
+                                    i++;
+                                 }
+                            </code>
+                    <li>
+                        Do-While Loop
+                    </li>
+                    <p>
+                        do {<br>
+                        // code to be executed
+                        <br> }while (condition);
+                    </p>
+                    <code>
+                                let i = 0;
+                                do {
+                                console.log(i);
+                                i++;
+                                } while (i < 5);
+                            </code>
+                    <li>
+                        ForEach Loop_ (for arrays)
+                    </li>
+                    <p>
+                        array.forEach(function(element) {
+                        // code to be executed
+                        });
+                    </p>
+                    <code>
+                                let colors = ['red', 'green', 'blue'];
+                                colors.forEach(function(color) {
+                                console.log(color);
+                                });
+                            </code>
+                    <li>
+                        For-Of Loop_ (for arrays and objects)
+                    </li>
+                    <p>
+                        for (let variable of array/object) {
+                        // code to be executed
+                        }
+                    </p>
+                    <code>
+                                let colors = ['red', 'green', 'blue'];
+                                for (let color of colors) {
+                                console.log(color);
+                                }
+                            </code>
+                </article>
+            </section>
+            <section id="Function">
+                <article>
+                    <h2>Functions</h2>
+                    <p>
+                        A function in JavaScript is a block of code that can be executed repeatedly with different
+                        inputs.
+                        Functions are useful
+                        for:
+                    </p>
+                    <ul>
+                        <li>
+                            Reusing code
+
+                        </li>
+                        <li>
+                            Organizing code
+                        </li>
+                        <li>
+                            Reducing code duplication
+                        </li>
+                        <li>
+                            Making code more readable and maintainable
+                        </li>
+                    </ul>
+                    <p>
+                        A function typically consists of:
+                    </p>
+                    <ul>
+                        <li>
+                            Function name
+                        </li>
+                        <li>
+                            Parameters (inputs)
+                        </li>
+                        <li>
+                            Function body (code to be executed)
+                        </li>
+                        <li>Return statement (optional)</li>
+                    </ul>
+                    <code>
+                            function greet(name) {
+                            console.log(`Hello, ${name}!`);
+                            }
+                            
+                            greet("John"); // Output: Hello, John!
+                            greet("Jane"); // Output: Hello, Jane!
+        
+                        </code>
+                    <p>
+                        Functions can also return values:
+                    </p>
+                    <code>
+                            function add(x, y) {
+                            return x + y;
+                            }
+                            
+                            let result = add(2, 3); // result: 5
+                        </code>
+                    <p>
+                        Functions can be defined in different ways, including:
+                    </p>
+                    <ul>
+                        <li>
+                            Function declaration (as above)
+                        </li>
+                        <li>
+                            Function expression
+                        </li>
+                    </ul>
+                    <code>
+                            let greet = function(name) {
+                            console.log(`Hello, ${name}!`);
+                            };
+                        </code>
+                    <li>
+                        Arrow function
+                    </li>
+                    <code>
+                            let greet = (name) => {
+                            console.log(`Hello, ${name}!`);
+                            };
+                        </code>
+                    <p>
+                        Functions are essential in JavaScript, and are used extensively in programming
+                    </p>
+                </article>
+            </section>
+            <section id="Array">
+                <article>
+                    <h2>
+                        Arrays
+                    </h2>
+                    <p>
+                        An array in JavaScript is a data structure that stores a collection of elements, which can be of
+                        any
+                        data type,
+                        including strings, numbers, objects, and other arrays. Arrays are useful for storing and
+                        manipulating collections of
+                        data.
+                    </p>
+                    <p>
+                        Here are some key features of arrays in JavaScript:
+                    </p>
+                    <p>
+                        <b>Declaring arrays:</b> Arrays can be declared using square brackets `[]` or the `Array`
+                        constructor.
+                    </p>
+                    <code>
+                        let myArray = []; // empty array
+                        let myArray = [1, 2, 3, 4, 5]; // array with 5 elements
+                    </code>
+                    <p>
+                        <b>
+                            Accessing elements:
+                        </b>Elements in an array can be accessed using their index (position in the array).
+                    </p>
+                    <code>
+                        let myArray = [1, 2, 3, 4, 5];
+                        console.log(myArray[0]); // outputs 1
+                        console.log(myArray[4]); // outputs 5
+                    </code>
+                    <p>
+                        <b>Length property:</b>The length property returns the number of elements in an array.
+                    </p>
+                    <code>
+                        let myArray = [1, 2, 3, 4, 5];
+                        console.log(myArray.length); // outputs 5
+                    </code>
+                    <p>
+                        <b>Methods</b> Arrays have various methods for manipulating elements, such as `push()`, `pop()`,
+                        `shift()`, `unshift()`, `splice()`,
+                        and more.
+                    </p>
+                    <code>
+                        let myArray = [1, 2, 3];
+                        myArray.push(4, 5); // adds 4 and 5 to the end of the array
+                        console.log(myArray); // outputs [1, 2, 3, 4, 5]
+                    </code>
+                    <p>
+                        <b>Nested arrays</b>Arrays can contain other arrays as elements.
+                    </p>
+                    <code>
+                        let myArray = [1, 2, [3, 4], 5]; // nested array
+                        console.log(myArray[2][0]); // outputs 3
+                    </code>
+                    <p>
+                        Arrays are a fundamental data structure in JavaScript, and are used extensively in programming.
+                    </p>
+                </article>
+            </section>
+            <section id="Objects">
+                <article>
+                    <h2>
+                        Objects
+                    </h2>
+                    <p>
+                        Objects in JavaScript are collections of properties, which are key-value pairs. Objects are used
+                        to
+                        represent complex
+                        data structures, such as:
+                    </p>
+                    <ul>
+                        <li>
+                            User information (name, age, address)
+                        </li>
+                        <li>
+                            Product details (title, price, description)
+                        </li>
+                        <li>
+                            Settings (theme, language, notifications)
+                        </li>
+
+                    </ul>
+                    <p>
+                        Objects are defined using curly braces `{}` and properties are added using the syntax `property:
+                        value`.
+                    </p>
+                    <code>
+                            let user = {
+                            name: 'John Doe',
+                            age: 30,
+                            address: {
+                            street: '123 Main St',
+                            city: 'Anytown',
+                            state: 'CA',
+                            zip: '12345'
+                            }
+                            };
+                        </code>
+                    <p>
+                        Objects have several methods and properties, including:
+                    </p>
+                    <p>
+                        - `Object.keys()` : Returns an array of property names <br>
+                        - `Object.values()` : Returns an array of property values <br>
+                        - `Object.entries()` : Returns an array of property key-value pairs <br>
+                        - `object.property` : Accesses a property value <br>
+                        - `object.property = value` : Sets a property value <br>
+                        - `delete object.property` : Deletes a property
+                    </p>
+                    <p>
+                        Objects are mutable, meaning their properties can be modified after creation
+                    </p>
+                    <p>
+                        Best practices for working with objects include
+                    </p>
+                    <ul>
+                        <li>
+                            Using meaningful property names
+                        </li>
+                        <li>
+                            Using objects to represent complex data
+                        </li>
+                        <li>
+                            Avoiding duplicate properties
+                        </li>
+                        <li>
+                            Using `const` to declare immutable objects
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section id="DOM">
+                <article>
+                    <h2>
+                        DOM Mainuplation
+                    </h2>
+                    <p>
+                        DOM (Document Object Model) manipulation refers to the ability to dynamically modify the
+                        content,
+                        structure, and style
+                        of an HTML document using JavaScript. This allows developers to update the web page in response
+                        to
+                        user interactions,
+                        server data, or other events.
+                        <br>
+                        Some common DOM manipulation techniques include:
+                    </p>
+                    <p>
+                        <b> 1. Selecting elements :</b> Using methods like `document.getElementById()`,
+                        `document.querySelector()`, or `document.querySelectorAll()` to select
+                        HTML elements.
+                    </p>
+                    <p>
+                        <b>
+                            2. Creating elements :
+                        </b>Using methods like `document.createElement()` to create new HTML elements.
+                    </p>
+                    <p>
+                        <b>
+                            3. Adding elements :
+                        </b>Using methods like `parentNode.appendChild()` or `element.innerHTML` to add new elements to
+                        the
+                        DOM.
+                    </p>
+                    <p>
+                        <b>
+                            4. Removing elements :
+                        </b>
+                        Using methods like `parentNode.removeChild()` to remove elements from the DOM.
+                    </p>
+                    <p>
+                        <b>
+                            5. Updating element properties :
+                        </b> Using properties like `element.textContent`, `element.href`, or `element.src` to update
+                        element
+                        attributes.
+                    </p>
+                    <p>
+                        <b>
+                            6.Adding event listeners :
+                        </b>Using methods like `element.addEventListener()` to attach event listeners to elements.
+                    </p>
+                    <p>
+                        <b>
+                            7.Updating styles :
+                        </b> Using properties like `element.style.color` or `element.className` to update element
+                        styles.
+                    </p>
+                    <p>
+                        Some popular DOM manipulation libraries and frameworks include:
+                    </p>
+                    <p> <b> 1.jQuery :</b>A popular JavaScript library for simplifying DOM manipulation and event
+                        handling.
+                    </p>
+                    <p>
+                        <b>2.React :</b>A JavaScript framework for building reusable UI components.
+                    </p>
+                    <p>
+                        <b> 3.Angular :</b>A JavaScript framework for building complex web applications.
+                    </p>
+                    <p>
+                        <b>
+                            4.Vue.js :
+                        </b> A progressive and flexible JavaScript framework for building web applications.
+                    </p>
+                    <p>
+                        DOM manipulation is a powerful tool for creating dynamic web pages, but it can also impact
+                        performance if not optimized.
+                        Best practices include:
+                    </p>
+                    <p>
+
+                        DOM manipulation is a powerful tool for creating dynamic web pages, but it can also impact
+                        performance if not optimized. Best practices include:
+
+                    </p>
+                    <p>
+                        <b>1. Minimizing DOM mutations:</b> Reducing the number of changes made to the DOM. <br>
+
+                        <b>2. Using batching:</b> Grouping multiple DOM updates <br>
+
+                        <b>3. Using virtual DOM:</b> Using a virtual DOM to optimize rendering.
+                    </p>
+                </article>
+            </section>
+            <section id="Events">
+                <article>
+                    <h2>
+                        Events
+                    </h2>
+
+                    <p>
+                        Events in JavaScript are actions that occur on a web page, such as:
+                    </p>
+                    <ul>
+                        1.Mouse clicks <br>
+                        2.Key presses <br>
+                        3.Page loads <br>
+                        4.Form submissions <br>
+                        5.Touch gestures <br>
+                    </ul>
+                    <p>Events are used to trigger functions or code execution in response to user interactions or other
+                        events. JavaScript
+                        provides various event listeners and handlers to manage events, including:</p>
+                    <p>
+                        <b>`addEventListener()` :</b> Attaches an event listener to an element. <br>
+                        <b>- `removeEventListener()` :</b> Removes an event listener from an element. <br>
+                        <b>- `onclick` , `onmouseover` , `onkeydown` , etc. :</b> Inline event handlers.
+                    </p>
+                    <ul>
+                        <li>click</li>
+                        <li>dbclick</li>
+                        <li>mousedown</li>
+                        <li>mouseup</li>
+                        <li>mousemove</li>
+                        <li>keydown</li>
+                        <li>keyup</li>
+                        <li>keypress</li>
+                        <li>submit</li>
+                        <li>change</li>
+                        <li>focus</li>
+                        <li>blur</li>
+                    </ul>
+                    <p>
+                        Event handlers can be used to:
+                    </p>
+                    <ul>
+                        <li>Validate form data</li>
+                        <li>
+                            Update the DOM
+                        </li>
+                        <li>Trigger animations</li>
+                        <li>Handle user interactions</li>
+                        <li>Make API requests</li>
+                    </ul>
+                    <p>Best practices for working with events include:</p>
+                    <ul>
+                        <li>Separating event handling code from other logic</li>
+                        <li>Using `addEventListener` instead of `onclick` attributes</li>
+                        <li>Using event delegation</li>
+                        <li>Using event delegation</li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <i>Copyright @ |Royal code</i>
+    </footer>
+</body>
+
+</html>
